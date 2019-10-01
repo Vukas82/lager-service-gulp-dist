@@ -1278,7 +1278,11 @@ header {
     grid-template-columns: 1fr;
     grid-template-areas: 'img1' 'img2 ' 'img3'; }
   .viewport p {
-    transform: translateX(-250px); } }
+    transform: translateX(-250px); }
+  .about .projects .project__1,
+  .about .projects .project__2,
+  .about .projects .project__3 {
+    height: auto; } }
 
 @media (max-width: 600px) {
   header .header__top {
