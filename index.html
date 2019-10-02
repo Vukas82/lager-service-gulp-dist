@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lager service</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="./css/pure.css">
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
@@ -192,9 +192,15 @@
                                 </div>
                                 <!-- </div> -->
 
-                                <img class=" carousel__image" src="images/LagerServis pocetna slika.jpg"
-                                    alt="Lager-service-pocetna-slika">
+                                <!-- <img class=" carousel__image" src="images/LagerServis pocetna slika.jpg"
+                                    alt="Lager-service-pocetna-slika"> -->
 
+                                <picture>
+                                    <source media="(max-width: 700px)"
+                                        srcset="images/LagerServis-pocetna-slika-700.jpg">
+                                    <img class="carousel__image" src="images/LagerServis pocetna slika.jpg"
+                                        alt="Lager-service-pocetna-slika">
+                                </picture>
                             </li>
                             <li class="carousel__slide">
                                 <div id="innerDiv2" class="carousel-div" style="display: none">
