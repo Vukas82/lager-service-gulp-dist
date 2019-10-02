@@ -246,7 +246,6 @@
   width: 60px; }
 
 .carousel .carousel__nav {
-  /* border-radius: 12px; */
   background-color: transparent;
   padding: 5px 0;
   position: absolute;
@@ -945,6 +944,7 @@ header {
           align-items: center; }
           header .header__top .header__top__contact .header__top__item .header__top__item__inner__lang img {
             width: 20px;
+            height: 15px;
             margin-right: 5px;
             border: 1px solid #03416e; }
         header .header__top .header__top__contact .header__top__item .lang {
