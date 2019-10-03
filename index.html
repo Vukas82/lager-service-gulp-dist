@@ -26,7 +26,14 @@
 </head>
 
 
-<body>
+<body onload="loader()">
+
+
+    <div class="gears">
+        <img src="images/big-gear_ap8wv1.png" alt="gear" class="big">
+        <img src="images/small-gear_zrimlb.png" alt="gear" class="small">
+    </div>
+
     <header id="header">
 
         <div class="container header__top">
@@ -646,7 +653,13 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        let gear = document.querySelector('.gears');
 
+        function loader() {
+            gear.style.display = "none"
+        };
+    </script>
     <!-- <script src="js/index.js"></script> -->
 </body>
 
