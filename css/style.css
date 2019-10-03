@@ -125,7 +125,8 @@
   .inner__link__left a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 100; }
 
 .inner__link__right {
   right: 50%;
@@ -158,7 +159,8 @@
   .inner__link__right a {
     text-decoration: none;
     color: #03416e;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 100; }
 
 @keyframes innerLinkLeft {
   0% {
