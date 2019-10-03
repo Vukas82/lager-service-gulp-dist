@@ -988,7 +988,7 @@ header {
             header .header__bottom nav ul li a h2 {
               color: #fff;
               font-size: 14px;
-              font-weight: 700;
+              font-weight: 100;
               text-transform: capitalize;
               position: relative;
               padding: 21px 0px; }
