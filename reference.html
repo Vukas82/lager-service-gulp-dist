@@ -184,7 +184,7 @@
         <p class="innerP">Reference</p>
     </section>
 
-    <section class="main">
+    <section id="company__1" class="main">
         <div class="container flex__container">
             <p class="date">Januar 2019.</p>
             <h3 class="company__name">CARGIL</h3>
@@ -194,50 +194,155 @@
                 (Aman- Jordan)</p>
         </div>
         <div class="container container__flex__grid">
-            <!-- <div class="container"> -->
-            <!-- <div class="img img1">
-                <img src="https://via.placeholder.com/350x250" alt="Lager-service-client-img">
-            </div>
-            <div class="img img2">
-                <img src="https://via.placeholder.com/350x250" alt="Lager-service-client-img">
-            </div>
-            <div class="img img3">
-                <img src="https://via.placeholder.com/350x250" alt="Lager-service-client-img">
-            </div> -->
+
+
+            <!-- <div class="row">
+                        <div class="column">
+                          <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        </div>
+                </div> -->
 
 
             <ul id="lightSlider">
-                <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 1.jpg" alt="Lager-service-client-img">
+                <li class="column">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 1.jpg" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
                 <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 2.jpg" alt="Lager-service-client-img">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 2.jpg" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
                 <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 3.jpg" alt="Lager-service-client-img">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 3.jpg" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
                 <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 4.jpg" alt="Lager-service-client-img">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 4.jpg" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
                 <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 5.jpg" alt="Lager-service-client-img">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 5.jpg" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
                 <li>
-                    <img src="./images/slider-clients/Cargil/Cargil-Slika 6.jpg" alt="Lager-service-client-img">
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 6.jpg" onclick="openModal();currentSlide(6)"
+                        class="hover-shadow" alt="Lager-service-client-img">
 
                 </li>
             </ul>
 
 
         </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./images/slider-clients/Cargil/Cargil-Slika 6.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+
+
+
     </section>
 
-    <section class="main">
+
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <section id="company__2" class="main">
         <div class="container flex__container">
             <p class="date">Mart 2019.</p>
             <h3 class="company__name">PATENT</h3>
@@ -287,7 +392,7 @@
 
     </section>
 
-    <section class="main">
+    <section id="company__3" class="main">
         <div class="container flex__container">
             <p class="date">April 2019.</p>
             <h3 class="company__name">ISV</h3>
