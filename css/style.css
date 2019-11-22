@@ -607,28 +607,13 @@
     .main .flex__container .text {
       text-align: justify; }
   .main .container__flex__grid {
-    height: auto;
-    width: auto;
-    margin-top: 30px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'img1 img2 img3';
-    gap: 30px;
-    box-sizing: border-box; }
-    .main .container__flex__grid .img {
-      margin-bottom: 30px; }
-      .main .container__flex__grid .img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center; }
-    .main .container__flex__grid .img1 {
-      grid-area: img1; }
-    .main .container__flex__grid .img2 {
-      grid-area: img2; }
-    .main .container__flex__grid .img3 {
-      grid-area: img3; }
+    margin: auto;
+    margin-top: 30px; }
+    .main .container__flex__grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
 
 .main {
   width: 100%;
@@ -816,9 +801,9 @@
         outline: 1px solid #03416e; }
       .contact__form .contact .contact__right button {
         width: 100%;
-        background-color: #929497;
+        background-color: #03416e;
         font-size: 14px;
-        border: 2px solid #929497;
+        border: 2px solid #03416e;
         color: #fff;
         text-transform: capitalize;
         padding: 0 30px;
@@ -842,8 +827,8 @@
         position: relative;
         font-weight: 700; }
       .contact__form .contact .contact__right button:hover {
-        background-color: #03416e;
-        border-color: #03416e; }
+        background-color: #929497;
+        border-color: #929497; }
       .contact__form .contact .contact__right .email-invalid {
         color: red;
         font-size: 12px; }
@@ -1391,9 +1376,6 @@ header {
     width: 60%; }
   footer .footer__wraper .footer__wraper__right {
     width: 40%; }
-  .main .container__flex__grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'img1' 'img2 ' 'img3'; }
   .viewport p {
     transform: translateX(-250px); }
   .about .projects .project__1,
