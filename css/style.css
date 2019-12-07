@@ -158,9 +158,9 @@
 .carousel-div {
   position: absolute;
   left: 50%;
-  top: 110px;
-  height: 80px;
-  width: 800px;
+  top: 80px;
+  height: auto;
+  width: 870px;
   padding: 20px 20px;
   opacity: 0;
   animation: innerImg 1s forwards;

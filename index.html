@@ -99,7 +99,7 @@
                             <img class="lang" src="images/Lager-service-english-flag.webp"
                                 alt="Lager-service-english-flag">
                         </a>
-                        <a href="../dist/index.html">
+                        <a href="index.html">
                             <!-- <img src="images/Lager-service-english-flag.svg" alt="Lager-service-serbia-flag"> -->
                             <img class="lang" src="images/Lager-service-serbia-flag.webp"
                                 alt="Lager-service-serbia-flag">
@@ -121,7 +121,7 @@
                     <li><a href="reference.html">
                             <h2>reference</h2>
                         </a></li>
-                    <!-- <li><a href="#">
+                    <!-- <li><a href="#" arialabel="link">
                             <h2>reference</h2>
                         </a></li> -->
                     <li><a href="zastupnistva.html">
@@ -178,12 +178,12 @@
                 </a>
             </li>
             <!-- <li>
-                <a href="#">
+                <a href="#" arialabel="link">
                     <h2>en</h2>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" arialabel="link">
                     <h2>sr</h2>
                 </a>
             </li> -->
@@ -197,15 +197,7 @@
 
     <section class="slider">
         <div class="slider__wraper">
-            <!-- <div class="slider__left">
-                <h2>explore</h2>
-                <h3>Most popular destination</h3>
-                <p>Take a look at the Best Places to Travel in 2019 for additional
-                    inspiration and if you already know where you're going this
-                    coming year, share your plans with us on social media with
-                    #TLBestPlacesthis link opens in a new tab.</p>
-                <a href="#">explore all</a>
-            </div> -->
+
             <div class="slider__right">
 
                 <div class="carousel">
@@ -217,8 +209,9 @@
                                 <div id="innerDiv1" class="carousel-div current-inner-div " style="display: block">
                                     <h1>Servis procesne opreme <br>
                                         montaža i demontaža</h1>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                                    <p>Naša kompanije je agent i ovlašteni serviser mašina za pakovanje i
+                                        paletizaciju rnomirane Poljske kompanije DREWMAX za teritoriju Srbije, Hrvatske,
+                                        Bosne i Hercegovine, Crne Gore i Makedonije.</p>
                                 </div>
                                 <!-- <div class="inner__link__container container"> -->
                                 <div class="inner__link__left" style="display: block">
@@ -230,19 +223,20 @@
                                 <!-- </div> -->
 
 
-                                <picture>
+                                <!-- <picture>
                                     <source media="(max-width: 700px)"
-                                        srcset="images/LagerServis-pocetna-slika-700.jpg">
-                                    <img class="carousel__image" src="images/LagerServis pocetna slika.jpg"
-                                        alt="Lager-service-pocetna-slika">
-                                </picture>
+                                        srcset="images/LagerServis-pocetna-slika-700.jpg"> -->
+                                <img class="carousel__image" src="images/LagerServis pocetna slika.jpg"
+                                    alt="Lager-service-pocetna-slika">
+                                <!-- </picture> -->
                             </li>
                             <li class="carousel__slide">
                                 <div id="innerDiv2" class="carousel-div" style="display: none">
                                     <h1>Servis procesne opreme <br>
                                         montaža i demontaža</h1>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                                    <p>Naša kompanije je agent i ovlašteni serviser mašina za pakovanje i
+                                        paletizaciju rnomirane Poljske kompanije DREWMAX za teritoriju Srbije, Hrvatske,
+                                        Bosne i Hercegovine, Crne Gore i Makedonije.</p>
                                 </div>
                                 <div class="inner__link__left" style="display: none">
                                     <a href="reference.html">Reference</a>
@@ -259,9 +253,12 @@
                                 <div id="innerDiv3" class="carousel-div" style="display: none">
                                     <h1>Servis procesne opreme <br>
                                         montaža i demontaža</h1>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolorum expedita
-                                        culpa aliquid delectus accusantium eaque sit dolore ea repellendus?</p>
+                                    <p>Naša kompanije je agent i ovlašteni serviser mašina za pakovanje i
+                                        paletizaciju rnomirane Poljske kompanije DREWMAX za teritoriju Srbije, Hrvatske,
+                                        Bosne i Hercegovine, Crne Gore i Makedonije.</p>
                                 </div>
+
+
                                 <div class=" inner__link__left" style="display: none">
                                     <a href="reference.html">Reference</a>
                                 </div>
@@ -275,13 +272,13 @@
                                 <!-- <img class=" carousel__image" src="/images/slider/slider-1.jpg" alt=""> -->
                             </li>
 
-
                         </ul>
 
                         <div class="carousel__nav">
-                            <button class="carousel__indicator current-slide"></button>
-                            <button class="carousel__indicator"></button>
-                            <button class="carousel__indicator"></button>
+                            <button class="carousel__indicator current-slide"
+                                aria-label="current-slide-indicator"></button>
+                            <button class="carousel__indicator" aria-label="current-slide-indicator"></button>
+                            <button class="carousel__indicator" aria-label="current-slide-indicator"></button>
                         </div>
                     </div>
                     <button class="carousel__button carousel__button--right" aria-label="Name"><img
@@ -342,7 +339,7 @@
                 <p>Montaža linija za pakovanje (3 pakerice u otvorene vreće kapaciteta 800 vr/h, 2 paletizera
                     kapacitetea 1200 vr/h, transportne linije u dužini od oko 100m) – za kompaniju DREWMAX - klijenta
                     CARGIL - Prvimi (Aman- Jordan)</p>
-                <a class="btn__arrow" href="./reference.html#company__1">Saznaj više</a>
+                <a class="btn__arrow" href="./reference.html#company__1" aria-label="to another page">Saznaj više</a>
             </div>
 
             <div class="project__2">
@@ -358,7 +355,7 @@
                 <h4 class="name__project">PATENT CO</h4>
                 <p>Montaža linije za pakovanje (pakerica u otvorene vreće kapaciteta 800 vr/h, paletizer kapacitetea
                     1000 vr/h, kontrlna vaga) – za kompaniju DREWMAX – klijent PATENT Co (Subotica Srbija)</p>
-                <a class="btn__arrow" href="./reference.html#company__2">Saznaj više</a>
+                <a class="btn__arrow" href="./reference.html#company__2" aria-label="to another page">Saznaj više</a>
 
             </div>
             <div class="project__3">
@@ -384,7 +381,7 @@
                         <li> Oprema za ventilaciju prostorija;</li>
                     </ul> -->
                 </p>
-                <a class="btn__arrow" href="./reference.html#company__3">Saznaj više</a>
+                <a class="btn__arrow" href="./reference.html#company__3" aria-label="to another page">Saznaj više</a>
 
             </div>
         </div>
@@ -394,7 +391,7 @@
     <section class="usluge">
         <div class="jobOffer container">
             <div class="servis">
-                <a href="#">
+                <a href="#" arialabel="link">
                     <!-- <img style="width: 150px" src="./images/Servis masina.svg"
                         alt="lager-service-servis-procesne-opreme"> -->
 
@@ -461,7 +458,7 @@
 
             </div>
             <div class="montaza">
-                <a href="#">
+                <a href="#" arialabel="link">
                     <!-- <img style="width: 150px" src="./images/Montaza.svg" alt="lager-service-servis-procesne-opreme"> -->
 
                     <div class="svg__container">
@@ -537,7 +534,7 @@
             </div>
 
             <div class="demontaza">
-                <a href="#">
+                <a href="#" arialabel="link">
                     <div class="svg__container">
                         <svg class="mySvg" height="512pt" viewBox="0 0 512 512.001" width="512pt"
                             xmlns="http://www.w3.org/2000/svg">
@@ -579,7 +576,7 @@
 
                 <span>
                     <!-- <img src="images/Lager-service-Email.svg" alt="Lager-service-Email-icon"> -->
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    <svg version="1.1" id="Layer12" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px"
                         viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
                         <g>
@@ -609,12 +606,12 @@
         <div class="footer__wraper container social">
             <div class="footer__social">
                 <p><small> Pratite nas na: &nbsp; &nbsp;</small><span>
-                        <a href="#">
+                        <a href="#" arialabel="link">
                             <!-- facebook -->
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
                                 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                                <g id="Layer_1">
+                                <g id="Layer_13">
                                 </g>
                                 <g id="Layer_2">
                                     <g>
@@ -632,12 +629,12 @@
                             </svg> -->
                         </a>
                     </span> &nbsp;<span>
-                        <a href="#">
+                        <a href="#" arialabel="link">
                             <!-- instagram -->
 
                             <?xml version="1.0" encoding="iso-8859-1"?>
                             <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            <svg version="1.1" id="Layer_14" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
                                 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                                 <g>
